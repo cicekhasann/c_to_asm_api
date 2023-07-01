@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translation Result</title>
+</head>
+<body>
+    {% if error_message %}
+        <h1>Error:</h1>
+        <p>{{ error_message }}</p>
+    {% else %}
+        <h1>Translation Result</h1>
+        <h2>C Code:</h2>
+        <pre>{{ c_code }}</pre>
+        <h2>Assembly Code:</h2>
+        <pre>{{ asm_code }}</pre>
+    {% endif %}
+    <a href="/">Go Back</a>
+</body>
+</html>
